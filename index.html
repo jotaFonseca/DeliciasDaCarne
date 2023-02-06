@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Botão Voltar ao Topo-->
+  <div>
+    <button class='voltaTopo' onclick="irTopo()">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </div>
+  <!--Topo-->
+  <header>
+    <div id='top'>
+      <!--Navbar-->
+      <nav>
+        <div class="logo">
+          <p>Delicias da <span>Carne</span></p>
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class='nav-list'>
+          <li><a class='topicos' title="sobre" href="#sobre">Sobre</a></li>
+          <li><a class='topicos' title="bovinos" href="#bovinos">Bovinos</a></li>
+          <li><a class='topicos' title="suinos" href="#suinos">Suínos</a></li>
+          <li><a class='topicos' title="loja" href="https://www.Google.com.br" target="_blank">Loja
+              Virtual</a></li>
+          <li><a class='topicos' title="contato" href="#contato">Contato</a></li>
+          <li><a class='topicos' title="local" href="#local">Local</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class='hero'>
+    <div class="hero-img">
+      <div class="hero-text">
+        <h1>Delicias da <span>Carne</span></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos labore accusamus placeat cumque
+          veritatis laborum veniam enim, quas dolorem error?</p>
+        <a href="#contato" class="hero-btn">Me contrate</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Sobre-->
+  <section id="sobre">
+    <div class="text-sobre">
+      <h2>Sobre</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla deserunt delectus, nemo aut recusandae
+        similique ullam repellendus quis officiis ducimus sapiente laboriosam quasi molestias? Dolorum, vero
+        optio impedit inventore pariatur amet nulla, provident tenetur corrupti laboriosam quia doloribus quae?
+        Recusandae porro, enim voluptatibus inventore numquam facilis quo velit dolore.
+      </p>
+      <a href="https://www.Google.com.br" target="_blank" class='btn-sobre'>Saiba mais</a>
+    </div>
+  </section>
+
+  <!--Bovinos-->
+  <section id='bovinos'>
+    <div class="bovino-text">
+      <h2>Bovinos</h2>
+    </div>
+    <div class="container-1">
+      <div class="card">
+        <img src='./assets/img/carne-3.jpg' alt='carne bovina'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+      <div class="card">
+        <img src='./assets/img/carne-3.jpg' alt='carne bovina'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+      <div class="card">
+        <img src='./assets/img/carne-3.jpg' alt='carne bovina'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Suinos-->
+  <section id="suinos">
+    <div class="suino-text">
+      <h2>Suinos</h2>
+    </div>
+    <div class="container-2">
+      <div class="card">
+        <img src='./assets/img/linguica.jpg' alt='linguiça suína'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+      <div class="card">
+        <img src='./assets/img/linguica.jpg' alt='linguiça suína'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+      <div class="card">
+        <img src='./assets/img/linguica.jpg' alt='linguiça suína'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi!</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Contato-->
+  <section id="contato">
+    <div class="contato-text">
+      <h2>Contato</h2>
+    </div>
+    <div class="form-pai">
+      <div class="form-contato">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, amet?</p>
+        <form>
+          <input type="text" id='nome' name='nome' placeholder="Nome">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <textarea name="msg" rows="20" cols="30" placeholder="Mensagem"></textarea>
+          <input type="button" name="btn" id="btn" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Localização-->
+  <section id="local">
+    <h2>Onde nos Achar!</h2>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.881417831474!2d-43.193806200000004!3d-22.9545939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe098bdb6fb%3A0xc40436dcdc0bff67!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20F%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-010!5e0!3m2!1spt-BR!2sbr!4v1671591370058!5m2!1spt-BR!2sbr"
+        width="90%" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!--Rodapé-->
+  <div class="rodape">
+    <footer>
+      <p>Delicias da <span>Carne</span> &copy; 2022 - Todos os direitos reservados</p>
+    </footer>
+  </div>
+</body>
+</html>

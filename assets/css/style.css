@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+.logo{
+    margin-left: 200px;
+    font-size: 20px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.topicos{
+    color:rgb(145, 1, 20);
+    margin: 10px 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.topicos:hover{
+    background-color: rgb(75, 2, 12);
+    color: rgb(10, 10, 10);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: whitesmoke;
+}
+span{
+    color:rgb(145, 1, 20);
+}
+.hero{
+    height: 600px;
+}
+.hero-img{
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), 
+    url(/assets/img/carne-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.hero-text p{
+    font-size: 20px;
+    height: 20px;
+    line-height: 10px;
+    margin-bottom: 30px;
+}
+.hero-btn{
+    background-color: rgb(73, 0, 10);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#sobre{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#sobre h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.text-sobre{
+    background-color:rgba(0, 0, 0, 0.2);
+    height: 80%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.text-sobre p{
+    width: 70%;
+    line-height: 50px;
+}
+.btn-sobre{
+    margin-top: 100px;
+    background-color: rgb(73, 0, 10);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-sobre:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.container-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 0 auto;
+}
+.bovino-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.container-2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 120px auto;
+}
+.suino-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 5px;
+    height: 400px;
+    width: 260px;
+    box-shadow: -5px 6px 10px rgb(0,0,0);
+    transition: 0.4s;
+}
+.card:hover{
+    height: 500px;
+    width: 360px;
+}
+.card p{
+    text-align: center;
+    margin-top: 30px;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.contato-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#contato{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px 30px;
+}
+.form-pai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text], [type=email]{
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 15px;
+}
+textarea{
+    width: 100%;
+    padding: 10px 15px;
+}
+#btn{
+    margin-top: 10px;
+    background-color: rgb(73, 0, 10);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 60px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 95px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#local h2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voltaTopo{
+    outline: none;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background-color: rgb(73, 0, 10);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.66);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.voltaTopo.active{
+    opacity: 1;
+    visibility: visible;
+}
+.voltaTopo:hover{
+    background-color: rgb(29, 28, 28);
+}
+.voltaTopo i{
+    width: 100%;
+    font-size: 20px;
+}
+
+@media (max-width: 400px){
+    .nav-list{
+        position: absolute;
+        top: 10vh;
+        right: 10px;
+        width: 150px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(-200%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list.active{
+        transform: translateY(0);
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .topicos{
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+        margin-right: 30px;
+    }
+    .logo p{
+        font-size: 15px;
+        line-height: 17px;
+        margin-left: -180px;
+    }
+    .hero-text p{
+        font-size: 15px;
+        width: 90%;
+        margin-left: 17px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .hero-btn{
+        position: relative;
+        top: 50px;
+        margin-top: 30px;
+        padding: 10px 20px;
+    }
+    .text-sobre h2{
+        margin-top: 120px;
+    }
+    .text-sobre p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .btn-sobre{
+        position: relative;
+        bottom: 70px;
+        padding: 10px 20px;
+    }
+    .container-1{
+        display: block;
+    }
+    .container-2{
+        display: block;
+    }
+    .card{
+        margin-bottom: 60px;
+        margin-left: 75px;
+    }
+    .card:hover{
+        width: 260px;
+        height: 400px;
+        margin-bottom: 80px;
+    }
+    iframe{
+        width: 800%;
+        height: 500px;
+    }
+}
